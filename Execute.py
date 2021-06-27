@@ -179,7 +179,7 @@ def analyzeacc():
     img_width, img_height = 128, 128
     cntt = 0
 
-    filename = filedialog.askopenfilename(initialdir="C:/Users/ACER/Desktop/yolo object detection/",
+    filename = filedialog.askopenfilename(initialdir="C:/Users/ACER/PycharmProjects/Fire_detect1/inputs",
                                           title="choose your file")
     cap = cv2.VideoCapture(filename)
     img_counter = 0

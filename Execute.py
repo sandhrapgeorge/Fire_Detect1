@@ -220,7 +220,7 @@ def analyzeacc():
             cv2.putText(frame, 'Fire', (x, y - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
             cv2.imwrite('detected-images/{}.jpg'.format(img_counter), frame)
             if (foo() == 4):
-                print("Found Fire more than 3 frames, Raising Email-Alert")
+                print("Found Fire more than 4 frames, Raising Email-Alert and turn on Alarm")
                 if Email_Status == False:
                     threading.Thread(target=email_alert).start()
                     Email_Status = True
